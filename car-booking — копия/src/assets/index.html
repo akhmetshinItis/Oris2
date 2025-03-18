@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="title">MORENT</h1>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search something here">
+        </div>
+        <div class="Profile_And_Notification">
+            <button class="like">
+                <img src="images/heart.png">
+            </button>
+            <button class="notification">
+                <div class="notif"></div>
+                <img src="images/notification.png">
+            </button>
+            <button class="settings">
+                <img src="images/setting-2.png">
+            </button>
+            <div class="profile">
+                <img src="images/profile.png" alt="profile" class="profile-image">
+            </div>
+        </div>
+    </header>
+    <div class="Cars">
+        <div class="additional">
+            <div class="ads_1">
+                <div class="ads">
+                    <div class="title_ads">
+                        <h1>The Best Platform for Car Rental</h1>
+                        <p>Ease of doing a car rental safely and reliably. Of course at a low price.</p>
+                        <button class="rent">Rental Car</button>
+                    </div>
+                </div>
+            </div>
+            <div class="ads_2">
+                <div class="ads_for_2">
+                    <div class="title_ads_2">
+                        <h1>Easy way to rent a car at a low price</h1>
+                        <p>Providing cheap car rental services and safe and comfortable facilities.</p>
+                        <button class="rent_2">Rental Car</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="options">
+            <div class="form-group pick-up">
+                <h3><img src="images/pick-up-icon.png" alt="Pick-Up Icon"> Pick - Up</h3>
+                <div class="form-fields">
+                    <div class="field">
+                        <label for="locations-pickup">Locations</label>
+                        <select id="locations-pickup">
+                            <option value="">Select your city</option>
+                        </select>
+                    </div>
+                    <div class="field-divider vertical"></div>
+                    <div class="field">
+                        <label for="date-pickup">Date</label>
+                        <select id="date-pickup">
+                            <option value="">Select your date</option>
+                        </select>
+                    </div>
+                    <div class="field-divider vertical"></div>
+                    <div class="field">
+                        <label for="time-pickup">Time</label>
+                        <select id="time-pickup">
+                            <option value="">Select your time</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button class="swap-button"><img src="images/swap-icon.png" alt="Swap Icon"></button>
+            <div class="form-group drop-off">
+                <h3><img src="images/drop-off-icon.png" alt="Drop-Off Icon"> Drop - Off</h3>
+                <div class="form-fields">
+                    <div class="field">
+                        <label for="locations-dropoff">Locations</label>
+                        <select id="locations-dropoff">
+                            <option value="">Select your city</option>
+                        </select>
+                    </div>
+                    <div class="field-divider vertical"></div>
+                    <div class="field">
+                        <label for="date-dropoff">Date</label>
+                        <select id="date-dropoff">
+                            <option value="">Select your date</option>
+                        </select>
+                    </div>
+                    <div class="field-divider vertical"></div>
+                    <div class="field">
+                        <label for="time-dropoff">Time</label>
+                        <select id="time-dropoff">
+                            <option value="">Select your time</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cars-cards">
+            <h4 class="highlited-gray">Popular cars</h4>
+            <div class="popular-cars row">
+                <div class="col-10 offset-1 col-lg-6 offset-lg-0 col-xl-3 car p-3">
+                    <div class="card p-3">
+                        <div class="row">
+                            <div class="col-10">
+                                <h5 class="name">Koeninsegg</h5>
+                                <h6 class="car-class highlited-gray">Sport</h6> 
+                            </div>
+                            <i class="fa-solid fa-heart col-2 fa-2x"></i>
+                        </div>
+                        <div class="car-img-container px-4">
+                            <img src="images/1.png" class="car-img">
+                        </div>
+                        <div class="row car-info mt-2">
+                            <div class="col-3 row justify-content-center">
+                                <i class="fa-solid fa-gas-pump"></i>
+                                <p class="highlited-gray">90L</p>
+                            </div>
+                            <div class="col-4 row justify-content-center">
+                                <i class="fa-solid fa-crosshairs"></i>
+                                <p class="highlited-gray">Manual</p>
+                            </div>
+                            <div class="col-5 row justify-content-center">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="highlited-gray">2 People</p>
+                            </div>
+                        </div>
+                        <div class="row mb-3 mt-5 justify-content-center">
+                            <p class="price col-7 text-start align-items-center d-flex">$99.00/<highlited-gray>day</highlited-gray></p>
+                            <a class="abutton col-5 text-end">Rent now</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-10 offset-1 col-lg-6 offset-lg-0 col-xl-3 car p-3">
+                    <div class="card p-3">
+                        <div class="row">
+                            <div class="col-10">
+                                <h5 class="name">Nissan GT - R</h5>
+                                <h6 class="car-class highlited-gray">Sport</h6> 
+                            </div>
+                            <i class="fa-regular fa-heart col-2 fa-2x"></i>
+                        </div>
+                        <div class="car-img-container px-4">
+                            <img src="images/2.png" class="car-img">
+                        </div>
+                        <div class="row car-info mt-2">
+                            <div class="col-3 row justify-content-center">
+                                <i class="fa-solid fa-gas-pump"></i>
+                                <p class="highlited-gray">80L</p>
+                            </div>
+                            <div class="col-4 row justify-content-center">
+                                <i class="fa-solid fa-crosshairs"></i>
+                                <p class="highlited-gray">Manual</p>
+                            </div>
+                            <div class="col-5 row justify-content-center">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="highlited-gray">2 People</p>
+                            </div>
+                        </div>
+                        <div class="row mb-3 mt-5 justify-content-center">
+                            <div class="col-7 p-0">
+                                <p class="price text-start">$80.00/<highlited-gray>day</highlited-gray></p>
+                                <p class="price discount highlited-gray">$100.00</p>
+                            </div>
+                            
+                            <a class="abutton col-5 text-end">Rent now</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-10 offset-1 col-lg-6 offset-lg-0 col-xl-3 car p-3">
+                    <div class="card p-3">
+                        <div class="row">
+                            <div class="col-10">
+                                <h5 class="name">Rolls - Royce</h5>
+                                <h6 class="car-class highlited-gray">Sedan</h6> 
+                            </div>
+                            <i class="fa-solid fa-heart col-2 fa-2x"></i>
+                        </div>
+                        <div class="car-img-container px-4">
+                            <img src="images/3.png" class="car-img">
+                        </div>
+                        <div class="row car-info mt-2">
+                            <div class="col-3 row justify-content-center">
+                                <i class="fa-solid fa-gas-pump"></i>
+                                <p class="highlited-gray">70L</p>
+                            </div>
+                            <div class="col-4 row justify-content-center">
+                                <i class="fa-solid fa-crosshairs"></i>
+                                <p class="highlited-gray">Manual</p>
+                            </div>
+                            <div class="col-5 row justify-content-center">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="highlited-gray">4 People</p>
+                            </div>
+                        </div>
+                        <div class="row mb-3 mt-5 justify-content-center">
+                            <p class="price col-7 text-start align-items-center d-flex">$96.00/<highlited-gray>day</highlited-gray></p>
+                            <a class="abutton col-5 text-end">Rent now</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-10 offset-1 col-lg-6 offset-lg-0 col-xl-3 car p-3">
+                    <div class="card p-3">
+                        <div class="row">
+                            <div class="col-10">
+                                <h5 class="name">Nissan GT - R</h5>
+                                <h6 class="car-class highlited-gray">Sport</h6> 
+                            </div>
+                            <i class="fa-regular fa-heart col-2 fa-2x"></i>
+                        </div>
+                        <div class="car-img-container px-4">
+                            <img src="images/2.png" class="car-img">
+                        </div>
+                        <div class="row car-info mt-2">
+                            <div class="col-3 row justify-content-center">
+                                <i class="fa-solid fa-gas-pump"></i>
+                                <p class="highlited-gray">90L</p>
+                            </div>
+                            <div class="col-4 row justify-content-center">
+                                <i class="fa-solid fa-crosshairs"></i>
+                                <p class="highlited-gray">Manual</p>
+                            </div>
+                            <div class="col-5 row justify-content-center">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="highlited-gray">2 People</p>
+                            </div>
+                        </div>
+                        <div class="row mb-3 mt-5 justify-content-center">
+                            <div class="col-7 p-0">
+                                <p class="price text-start">$80.00/<highlited-gray>day</highlited-gray></p>
+                                <p class="price discount highlited-gray">$100.00</p>
+                            </div>
+                            <a class="abutton col-5 text-end">Rent now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+    
+            <h4 class="highlited-gray">Recomendation cars</h4>
+            <div class="recomendation-cars row">
+                <div class="col-10 offset-1 col-lg-6 offset-lg-0 col-xl-3 car p-3">
+                    <div class="card p-3">
+                        <div class="row">
+                            <div class="col-10">
+                                <h5 class="name">All New Rush</h5>
+                                <h6 class="car-class highlited-gray">SUV</h6> 
+                            </div>
+                            <i class="fa-solid fa-heart col-2 fa-2x"></i>
+                        </div>
+                        <div class="car-img-container px-4">
+                            <img src="images/4.png" class="car-img">
+                        </div>
+                        <div class="row car-info mt-2">
+                            <div class="col-3 row justify-content-center">
+                                <i class="fa-solid fa-gas-pump"></i>
+                                <p class="highlited-gray">70L</p>
+                            </div>
+                            <div class="col-4 row justify-content-center">
+                                <i class="fa-solid fa-crosshairs"></i>
+                                <p class="highlited-gray">Manual</p>
+                            </div>
+                            <div class="col-5 row justify-content-center">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="highlited-gray">6 People</p>
+                            </div>
+                        </div>
+                        <div class="row mb-3 mt-5 justify-content-center">
+                            <div class="col-7 p-0">
+                                <p class="price text-start">$72.00/<highlited-gray>day</highlited-gray></p>
+                                <p class="price discount highlited-gray">$80.00</p>
+                            </div>
+                            <a class="abutton col-5 text-end">Rent now</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-10 offset-1 col-lg-6 offset-lg-0 col-xl-3 car p-3">
+                    <div class="card p-3">
+                        <div class="row">
+                            <div class="col-10">
+                                <h5 class="name">CR - V</h5>
+                                <h6 class="car-class highlited-gray">SUV</h6> 
+                            </div>
+                            <i class="fa-regular fa-heart col-2 fa-2x"></i>
+                        </div>
+                        <div class="car-img-container px-4">
+                            <img src="images/5.png" class="car-img">
+                        </div>
+                        <div class="row car-info mt-2">
+                            <div class="col-3 row justify-content-center">
+                                <i class="fa-solid fa-gas-pump"></i>
+                                <p class="highlited-gray">80L</p>
+                            </div>
+                            <div class="col-4 row justify-content-center">
+                                <i class="fa-solid fa-crosshairs"></i>
+                                <p class="highlited-gray">Manual</p>
+                            </div>
+                            <div class="col-5 row justify-content-center">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="highlited-gray">6 People</p>
+                            </div>
+                        </div>
+                        <div class="row mb-3 mt-5 justify-content-center">
+                            <p class="price col-7 text-start align-items-center d-flex">$80.00/<highlited-gray>day</highlited-gray></p>
+                            <a class="abutton col-5 text-end">Rent now</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-10 offset-1 col-lg-6 offset-lg-0 col-xl-3 car p-3">
+                    <div class="card p-3">
+                        <div class="row">
+                            <div class="col-10">
+                                <h5 class="name">All New Rush</h5>
+                                <h6 class="car-class highlited-gray">SUV</h6> 
+                            </div>
+                            <i class="fa-solid fa-heart col-2 fa-2x"></i>
+                        </div>
+                        <div class="car-img-container px-4">
+                            <img src="images/4.png" class="car-img">
+                        </div>
+                        <div class="row car-info mt-2">
+                            <div class="col-3 row justify-content-center">
+                                <i class="fa-solid fa-gas-pump"></i>
+                                <p class="highlited-gray">70L</p>
+                            </div>
+                            <div class="col-4 row justify-content-center">
+                                <i class="fa-solid fa-crosshairs"></i>
+                                <p class="highlited-gray">Manual</p>
+                            </div>
+                            <div class="col-5 row justify-content-center">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="highlited-gray">6 People</p>
+                            </div>
+                        </div>
+                        <div class="row mb-3 mt-5 justify-content-center">
+                            <div class="col-7 p-0">
+                                <p class="price text-start">$72.00/<highlited-gray>day</highlited-gray></p>
+                                <p class="price discount highlited-gray">$80.00</p>
+                            </div>
+                            <a class="abutton col-5 text-end">Rent now</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-10 offset-1 col-lg-6 offset-lg-0 col-xl-3 car p-3">
+                    <div class="card p-3">
+                        <div class="row">
+                            <div class="col-10">
+                                <h5 class="name">CR - V</h5>
+                                <h6 class="car-class highlited-gray">SUV</h6> 
+                            </div>
+                            <i class="fa-regular fa-heart col-2 fa-2x"></i>
+                        </div>
+                        <div class="car-img-container px-4">
+                            <img src="images/5.png" class="car-img">
+                        </div>
+                        <div class="row car-info mt-2">
+                            <div class="col-3 row justify-content-center">
+                                <i class="fa-solid fa-gas-pump"></i>
+                                <p class="highlited-gray">80L</p>
+                            </div>
+                            <div class="col-4 row justify-content-center">
+                                <i class="fa-solid fa-crosshairs"></i>
+                                <p class="highlited-gray">Manual</p>
+                            </div>
+                            <div class="col-5 row justify-content-center">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="highlited-gray">6 People</p>
+                            </div>
+                        </div>
+                        <div class="row mb-3 mt-5 justify-content-center">
+                            <p class="price col-7 text-start align-items-center d-flex">$80.00/<highlited-gray>day</highlited-gray></p>
+                            <a class="abutton col-5 text-end">Rent now</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-10 offset-1 col-lg-6 offset-lg-0 col-xl-3 car p-3">
+                    <div class="card p-3">
+                        <div class="row">
+                            <div class="col-10">
+                                <h5 class="name">All New Rush</h5>
+                                <h6 class="car-class highlited-gray">SUV</h6> 
+                            </div>
+                            <i class="fa-solid fa-heart col-2 fa-2x"></i>
+                        </div>
+                        <div class="car-img-container px-4">
+                            <img src="images/4.png" class="car-img">
+                        </div>
+                        <div class="row car-info mt-2">
+                            <div class="col-3 row justify-content-center">
+                                <i class="fa-solid fa-gas-pump"></i>
+                                <p class="highlited-gray">70L</p>
+                            </div>
+                            <div class="col-4 row justify-content-center">
+                                <i class="fa-solid fa-crosshairs"></i>
+                                <p class="highlited-gray">Manual</p>
+                            </div>
+                            <div class="col-5 row justify-content-center">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="highlited-gray">6 People</p>
+                            </div>
+                        </div>
+                        <div class="row mb-3 mt-5 justify-content-center">
+                            <div class="col-7 p-0">
+                                <p class="price text-start">$72.00/<highlited-gray>day</highlited-gray></p>
+                                <p class="price discount highlited-gray">$80.00</p>
+                            </div>
+                            <a class="abutton col-5 text-end">Rent now</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-10 offset-1 col-lg-6 offset-lg-0 col-xl-3 car p-3">
+                    <div class="card p-3">
+                        <div class="row">
+                            <div class="col-10">
+                                <h5 class="name">CR - V</h5>
+                                <h6 class="car-class highlited-gray">SUV</h6> 
+                            </div>
+                            <i class="fa-regular fa-heart col-2 fa-2x"></i>
+                        </div>
+                        <div class="car-img-container px-4">
+                            <img src="images/5.png" class="car-img">
+                        </div>
+                        <div class="row car-info mt-2">
+                            <div class="col-3 row justify-content-center">
+                                <i class="fa-solid fa-gas-pump"></i>
+                                <p class="highlited-gray">80L</p>
+                            </div>
+                            <div class="col-4 row justify-content-center">
+                                <i class="fa-solid fa-crosshairs"></i>
+                                <p class="highlited-gray">Manual</p>
+                            </div>
+                            <div class="col-5 row justify-content-center">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="highlited-gray">6 People</p>
+                            </div>
+                        </div>
+                        <div class="row mb-3 mt-5 justify-content-center">
+                            <p class="price col-7 text-start align-items-center d-flex">$80.00/<highlited-gray>day</highlited-gray></p>
+                            <a class="abutton col-5 text-end">Rent now</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-10 offset-1 col-lg-6 offset-lg-0 col-xl-3 car p-3">
+                    <div class="card p-3">
+                        <div class="row">
+                            <div class="col-10">
+                                <h5 class="name">All New Rush</h5>
+                                <h6 class="car-class highlited-gray">SUV</h6> 
+                            </div>
+                            <i class="fa-solid fa-heart col-2 fa-2x"></i>
+                        </div>
+                        <div class="car-img-container px-4">
+                            <img src="images/4.png" class="car-img">
+                        </div>
+                        <div class="row car-info mt-2">
+                            <div class="col-3 row justify-content-center">
+                                <i class="fa-solid fa-gas-pump"></i>
+                                <p class="highlited-gray">70L</p>
+                            </div>
+                            <div class="col-4 row justify-content-center">
+                                <i class="fa-solid fa-crosshairs"></i>
+                                <p class="highlited-gray">Manual</p>
+                            </div>
+                            <div class="col-5 row justify-content-center">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="highlited-gray">6 People</p>
+                            </div>
+                        </div>
+                        <div class="row mb-3 mt-5 justify-content-center">
+                            <div class="col-7 p-0">
+                                <p class="price text-start">$72.00/<highlited-gray>day</highlited-gray></p>
+                                <p class="price discount highlited-gray">$80.00</p>
+                            </div>
+                            <a class="abutton col-5 text-end">Rent now</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-10 offset-1 col-lg-6 offset-lg-0 col-xl-3 car p-3">
+                    <div class="card p-3">
+                        <div class="row">
+                            <div class="col-10">
+                                <h5 class="name">CR - V</h5>
+                                <h6 class="car-class highlited-gray">SUV</h6> 
+                            </div>
+                            <i class="fa-regular fa-heart col-2 fa-2x"></i>
+                        </div>
+                        <div class="car-img-container px-4">
+                            <img src="images/5.png" class="car-img">
+                        </div>
+                        <div class="row car-info mt-2">
+                            <div class="col-3 row justify-content-center">
+                                <i class="fa-solid fa-gas-pump"></i>
+                                <p class="highlited-gray">80L</p>
+                            </div>
+                            <div class="col-4 row justify-content-center">
+                                <i class="fa-solid fa-crosshairs"></i>
+                                <p class="highlited-gray">Manual</p>
+                            </div>
+                            <div class="col-5 row justify-content-center">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="highlited-gray">6 People</p>
+                            </div>
+                        </div>
+                        <div class="row mb-3 mt-5 justify-content-center">
+                            <p class="price col-7 text-start align-items-center d-flex">$80.00/<highlited-gray>day</highlited-gray></p>
+                            <a class="abutton col-5 text-end">Rent now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <a class="abutton col-2 offset-5 my-4">Show more cars</a>
+                <p class="highlited-gray col-1 offset-4 align-items-center d-flex justify-content-end">120</p>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="row list-container">
+                <!-- Логотип и видение -->
+                <div class="col-10 offset-0 col-lg-4 offset-lg-1 company">
+                    <h2 class="logo">MORENT</h2>
+                    <p class="vision">Our vision is to provide convenience<br> and help increase your sales business.
+                    </p>
+                </div>
+                <!-- Навигационные ссылки -->
+                <!-- About -->
+                <div class="col-6 offset-0 col-lg-2 offset-lg-1">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">Featured</a></li>
+                        <li><a href="#">Partnership</a></li>
+                        <li><a href="#">Business Relation</a></li>
+                    </ul>
+                </div>
+                <!-- Community -->
+                <div class="col-6 col-lg-2">
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Podcast</a></li>
+                        <li><a href="#">Invite a friend</a></li>
+                    </ul>
+                </div>
+                <!-- Socials -->
+                <div class="col-6 col-lg-2">
+                    <h3>Socials</h3>
+                    <ul>
+                        <li><a href="#">Discord</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <!-- Юридическая информация -->
+            <div class="row copyright-bottom">
+                <div class="col-4 offset-1 o">
+                    <p class="copyright">©2022 MORENT. All rights reserved</p>
+                </div>
+                <div class="col-4 offset-2">
+                    <ul class="policy">
+                        <li><a href="#">Privacy &amp; Policy</a></li>
+                        <li><a href="#">Terms &amp; Condition</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>    
+</body>
+</html>
