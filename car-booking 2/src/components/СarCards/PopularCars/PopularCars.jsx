@@ -1,13 +1,14 @@
 import CarCard from "../CarCard/CarCard";
 import CarsData from "../CarsData";
 import React from 'react';
+import {Link} from "react-router-dom";
 
 const PopularCars = () => {
     return (
         <>
             <div className="text">
                 <h4 className="highlited-gray">Popular cars</h4>
-                <a href="/DetailCar" className="view">View All</a> 
+                <Link to={"/details"} className="view">View All</Link> 
             </div>
             <div className="popular-cars row">
                 {CarsData.slice(0, 4).map(car => (

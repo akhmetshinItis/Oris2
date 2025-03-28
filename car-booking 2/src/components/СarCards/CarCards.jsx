@@ -1,3 +1,4 @@
+import CarsData from "./CarsData";
 import PopularCars from "./PopularCars/PopularCars";
 import RecommendationCars from "./RecommendationCars/RecommendationCars";
 
@@ -6,7 +7,7 @@ const CarCards = () => {
         <>
             <section class="cars-cards">
                 <PopularCars/>
-                <RecommendationCars/>
+                <RecommendationCars CarsData = {CarsData}/>
             </section>
         </>
     );

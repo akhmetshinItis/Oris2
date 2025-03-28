@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\admin\\source\\repos\\CarBooking\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{59FF2B16-CC3D-44F9-90B6-40692D0C35C0}|CarBooking\\CarBooking.csproj|c:\\users\\admin\\source\\repos\\carbooking\\carbooking\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59FF2B16-CC3D-44F9-90B6-40692D0C35C0}|CarBooking\\CarBooking.csproj|solutionrelative:carbooking\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59FF2B16-CC3D-44F9-90B6-40692D0C35C0}|CarBooking\\CarBooking.csproj|c:\\users\\admin\\source\\repos\\carbooking\\carbooking\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59FF2B16-CC3D-44F9-90B6-40692D0C35C0}|CarBooking\\CarBooking.csproj|solutionrelative:carbooking\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59FF2B16-CC3D-44F9-90B6-40692D0C35C0}|CarBooking\\CarBooking.csproj|c:\\users\\admin\\source\\repos\\carbooking\\carbooking\\data\\carsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59FF2B16-CC3D-44F9-90B6-40692D0C35C0}|CarBooking\\CarBooking.csproj|solutionrelative:carbooking\\data\\carsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59FF2B16-CC3D-44F9-90B6-40692D0C35C0}|CarBooking\\CarBooking.csproj|c:\\users\\admin\\source\\repos\\carbooking\\carbooking\\enums\\transmissionenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59FF2B16-CC3D-44F9-90B6-40692D0C35C0}|CarBooking\\CarBooking.csproj|solutionrelative:carbooking\\enums\\transmissionenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59FF2B16-CC3D-44F9-90B6-40692D0C35C0}|CarBooking\\CarBooking.csproj|c:\\users\\admin\\source\\repos\\carbooking\\carbooking\\enums\\categoryenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59FF2B16-CC3D-44F9-90B6-40692D0C35C0}|CarBooking\\CarBooking.csproj|solutionrelative:carbooking\\enums\\categoryenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59FF2B16-CC3D-44F9-90B6-40692D0C35C0}|CarBooking\\CarBooking.csproj|c:\\users\\admin\\source\\repos\\carbooking\\carbooking\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59FF2B16-CC3D-44F9-90B6-40692D0C35C0}|CarBooking\\CarBooking.csproj|solutionrelative:carbooking\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CommentsController.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\CarBooking\\CarBooking\\Controllers\\CommentsController.cs",
+              "RelativeDocumentMoniker": "CarBooking\\Controllers\\CommentsController.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\CarBooking\\CarBooking\\Controllers\\CommentsController.cs",
+              "RelativeToolTip": "CarBooking\\Controllers\\CommentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T21:58:23.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\CarBooking\\CarBooking\\Models\\Comment.cs",
+              "RelativeDocumentMoniker": "CarBooking\\Models\\Comment.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\CarBooking\\CarBooking\\Models\\Comment.cs",
+              "RelativeToolTip": "CarBooking\\Models\\Comment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T21:28:53.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CarsData.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\CarBooking\\CarBooking\\Data\\CarsData.cs",
+              "RelativeDocumentMoniker": "CarBooking\\Data\\CarsData.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\CarBooking\\CarBooking\\Data\\CarsData.cs",
+              "RelativeToolTip": "CarBooking\\Data\\CarsData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T20:48:54.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TransmissionEnum.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\CarBooking\\CarBooking\\Enums\\TransmissionEnum.cs",
+              "RelativeDocumentMoniker": "CarBooking\\Enums\\TransmissionEnum.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\CarBooking\\CarBooking\\Enums\\TransmissionEnum.cs",
+              "RelativeToolTip": "CarBooking\\Enums\\TransmissionEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T20:41:06.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CategoryEnum.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\CarBooking\\CarBooking\\Enums\\CategoryEnum.cs",
+              "RelativeDocumentMoniker": "CarBooking\\Enums\\CategoryEnum.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\CarBooking\\CarBooking\\Enums\\CategoryEnum.cs",
+              "RelativeToolTip": "CarBooking\\Enums\\CategoryEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T20:37:44.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\CarBooking\\CarBooking\\Program.cs",
+              "RelativeDocumentMoniker": "CarBooking\\Program.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\CarBooking\\CarBooking\\Program.cs",
+              "RelativeToolTip": "CarBooking\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T20:27:49.244Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
