@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CarInfo = ({ car }) => {
   return (
@@ -66,7 +67,7 @@ const CarInfo = ({ car }) => {
             <div className="d-flex justify-content-between align-items-center mt-5">
               <h2 className="fw-bold price">{car.price} /<span className="highlited-gray">day</span></h2>
               
-              <a href="#" className="btn btn-primary btn-lg">Rent Now</a>
+              <Link  to={`/rent/${car.id}`} className="btn btn-primary btn-lg">Rent Now</Link>
             </div>
           </div>
         </div>

@@ -25,6 +25,18 @@ const CarDetail = () => {
 
     const [car, setCar] = useState([]);
     const [reviews, setReview] = useState([]);
+
+    const [cars, setCars] = useState([]);
+    
+
+    useEffect(() => {
+        fetch("http://localhost:5185/api/Cars/GetAll")
+        .then(async(response) => {
+                let data = await response.json();
+                setCars(data);
+                console.log(data)
+        })
+    }, [])
     
 
     useEffect(() => {
@@ -59,7 +71,7 @@ const CarDetail = () => {
             <div className="col-9 background-gray p-0 fake-col-12">
                 <CarInfo car = {car}/>
                 <Reviews reviews = {reviews}/>
-                <CarsSection cars={filteredCars} />
+                <CarsSection cars={cars} />
             </div>
         </div>
     );

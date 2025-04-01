@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Category from './pages/Category';
 import Layout from './layouts/Layout'; 
 import CarDetail from './pages/CarDetail';
+import PayPage from './pages/PayPage';
 
 const App = () => {
     return (
@@ -13,6 +14,7 @@ const App = () => {
                     <Route index element={<Home />} />
                     <Route path="category" element={<Category />} />
                     <Route path="cardetail/:id" element={<CarDetail/>} />
+                    <Route path="rent/:id" element={<PayPage />} />
                 </Route>
             </Routes>
         </Router>

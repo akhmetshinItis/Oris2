@@ -1,3 +1,6 @@
+using car_booking.Extensions;
+using car_booking.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
     builder.Services.AddOpenApi();
@@ -5,6 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
     builder.Services.AddSwaggerGen();
 
     var configuration = builder.Configuration;
+    builder.Services.AddSingleton<IConfiguration>(configuration);
+    builder.Services.AddTransient<IEmailService, EmailService>();
+    builder.Services.AddScoped<EmailSettings>();
 
     var app = builder.Build();
 // Configure the HTTP request pipeline.

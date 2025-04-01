@@ -26,7 +26,7 @@ public class CarsController : ControllerBase
         => Ok(Seed.Cars.Select(x => new CarVm(x)));
         
     [HttpGet("GetFiltered")]
-    public IEnumerable<Car>? GetFiltered(
+    public IEnumerable<CarVm>? GetFiltered(
         string? name,
         decimal? price,
         int? liters,
@@ -34,10 +34,11 @@ public class CarsController : ControllerBase
         TransmissionType? transmissionType,
         CarType? carType)
         => Seed.Cars
-            .WhereIfNotNull(name, x => x.Name == name)
+            .Where(x => x.Name.ToLower().Contains(name?.ToLower() ?? ""))
             .WhereIfNotNull(price, p => p.Price == price)
             .WhereIfNotNull(liters, x => x.Liters == liters)
             .WhereIfNotNull(spaces, x => x.Spaces == spaces)
             .WhereIfNotNull(transmissionType, x => x.Transmission == transmissionType)
-            .WhereIfNotNull(carType, x => x.Type == carType);
+            .WhereIfNotNull(carType, x => x.Type == carType)
+            .Select(car => new CarVm(car));
 }
