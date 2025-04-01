@@ -1,0 +1,350 @@
+Как мне теперь реализовать такую же логику отправки формы, но в другом проекте где
+
+import React from 'react';
+
+const BillingInfo = () => {
+  return (
+    <div className="container mt-4">
+      <div className="card p-4">
+        <div className="row mb-3 justify-content-end">
+          <div className="col-md-12">
+            <h5 className="mb-1">Billing Info</h5>
+            <div className='d-flex' style={{justifyContent: 'space-between'}}>
+              <p className="small" style={{color: '#90A3BF'}}>Please enter your billing info</p>
+              <small className="small" style={{color: '#90A3BF'}}>Step 1 of 4</small>
+            </div>
+          </div>
+        </div>
+
+        <div className="row g-3">
+          <div className="col-md-6 mb-4">
+            <label htmlFor="name" className="form-label">Name</label>
+            <input type="text" className="form-control custom-input" id="name" placeholder="Your name" style={{ backgroundColor: '#F6F7F9'}} />
+          </div>
+
+          <div className="col-md-6">
+            <label htmlFor="phoneNumber" className="form-label">Email</label>
+            <input type="tel" className="form-control custom-input" id="phoneNumber" placeholder="Email" style={{ backgroundColor: '#F6F7F9'}} />
+          </div>
+
+          <div className="col-md-6">
+            <label htmlFor="address" className="form-label">Address</label>
+            <input type="text" className="form-control custom-input" id="address" placeholder="Address" style={{ backgroundColor: '#F6F7F9'}}/>
+          </div>
+
+          <div className="col-md-6">
+            <label htmlFor="townCity" className="form-label">Town / City</label>
+            <input type="text" className="form-control custom-input" id="townCity" placeholder="Town or city" style={{ backgroundColor: '#F6F7F9'}}/>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default BillingInfo;
+
+import React from 'react';
+
+const Confirmation = () => {
+  return (
+    <div className="container mt-4 mb-4">
+      <div className="card p-4">
+        <div className="row align-items-center mb-3">
+          <div className="col-md-12">
+            <h5 className="mb-1">Confirmation</h5>
+            <div className='d-flex' style={{justifyContent: 'space-between'}}>
+              <p className="small" style={{color: '#90A3BF'}}>We are getting to the end. Just a few clicks and your rental is ready!</p>
+              <small className="small" style={{color: '#90A3BF'}}>Step 4 of 4</small>
+            </div>
+          </div>
+        </div>
+
+        <div className="form-check mb-4 rounded-lg p-2" style={{ backgroundColor: '#F6F7F9', border:'1px solid #ddd' }}>
+          <input className="form-check-input ml-2" type="checkbox" id="termsCheckbox" style={{ transform: 'scale(1.5)'}}/>
+          <label className="form-check-label ml-5" htmlFor="termsCheckbox">
+            I agree with sending an Marketing and newsletter emails. No spam, promissed!
+          </label>
+        </div>
+
+        <div className="form-check mb-4 rounded-lg p-2" style={{ backgroundColor: '#F6F7F9', border:'1px solid #ddd' }}>
+          <input className="form-check-input ml-2" type="checkbox" id="termsCheckbox" style={{ transform: 'scale(1.5)'}}/>
+          <label className="form-check-label ml-5" htmlFor="termsCheckbox">
+            I agree with our terms and conditions and privacy policy.
+          </label>
+        </div>
+
+        <button type="button" className="btn btn-primary w-25 mb-4">Rent Now</button>
+
+        <img className='mb-3' src='/public/images/ic-security-safety.png' style={{height: '32px', width: '32px'}}/>
+
+        <div className="d-flex align-items-center mb-2">
+          <p className="mb-0">All your data are safe</p>
+        </div>
+
+        <p className="text-muted small">We are using the most advanced security to provide you the best experience ever.</p>
+      </div>
+    </div>
+  );
+};
+
+export default Confirmation;
+
+import React, { useState } from 'react';
+
+const PaymentFields = () => {
+  const [selectedMethod, setSelectedMethod] = useState('creditCard');
+
+  const handleRadioChange = (event) => {
+    setSelectedMethod(event.target.value);
+  };
+
+  return (
+    <div className="container mt-4">
+      <div className="card p-4">
+        <div className="row align-items-center mb-3">
+          <div className="col-md-12">
+            <h5 className="mb-1">Payment Method</h5>
+            <div className='d-flex' style={{justifyContent: 'space-between'}}>
+              <p className="small" style={{color: '#90A3BF'}}>Please enter your payment method</p>
+              <small className="small" style={{color: '#90A3BF'}}>Step 3 of 4</small>
+            </div>
+          </div>
+        </div>
+
+        <div
+          className="rounded p-4"
+          style={{ backgroundColor: '#F6F7F9', border: '1px solid #ddd' }}
+        >
+          <div className="form-check mb-3">
+            <div className='d-flex justify-content-between' style={{gap: '10px'}}>
+              <div>
+                <img src='/public/images/mark.png' />
+                <label className="form-check-label ml-2" htmlFor="creditCard">
+                 Credit Card
+                </label>
+              </div>
+              <img
+                src="/public/images/Visa.png"
+                alt="Visa & Mastercard"
+                style={{ width: '100px' }}
+              />
+            </div>
+          </div>
+
+          {selectedMethod === 'creditCard' && (
+            <form>
+              <div className="row g-3">
+                <div className="col-md-6">
+                  <label htmlFor="cardNumber" className="form-label">
+                    Card Number
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="cardNumber"
+                    placeholder="Card number"
+                  />
+                </div>
+                <div className="col-md-6">
+                  <label htmlFor="expirationDate" className="form-label">
+                    Expiration Date
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="expirationDate"
+                    placeholder="DD/MM/YY"
+                  />
+                </div>
+                <div className="col-md-6">
+                  <label htmlFor="cardHolder" className="form-label">
+                    Card Holder
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="cardHolder"
+                    placeholder="Card holder"
+                  />
+                </div>
+                <div className="col-md-6">
+                  <label htmlFor="cvc" className="form-label">
+                    CVC
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="cvc"
+                    placeholder="CVC"
+                  />
+                </div>
+              </div>
+            </form>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default PaymentFields;
+
+import React from 'react';
+
+const RentalInfo = () => {
+  return (
+    <div className="container mt-4">
+      <div className="card p-4">
+        <div className="row align-items-center mb-3">
+          <div className="col-md-12">
+            <h5 className="mb-1">Rental Info</h5>
+            <div className='d-flex' style={{justifyContent: 'space-between'}}>
+              <p className="small" style={{color: '#90A3BF'}}>Please select your rental date</p>
+              <small className="small" style={{color: '#90A3BF'}}>Step 2 of 4</small>
+            </div>
+          </div>
+        </div>
+
+        <div className="mb-4">
+          <div className="form-check mb-3">
+            <img src='/public/images/mark.png'/>
+            <label className="form-check-label ml-2" htmlFor="pickUp">
+              Pick-Up
+            </label>
+          </div>
+
+          <div className="row g-3">
+            <div className="col-md-6">
+              <label htmlFor="pickupLocation" className="form-label">Locations</label>
+              <select className="form-select custom-select" id="pickupLocation">
+                <option value="" disabled selected hidden>Select your city</option>
+                <option>New York</option>
+                <option>Moscow</option>
+                <option>Washington</option>
+              </select>
+            </div>
+            <div className="col-md-6">
+              <label htmlFor="pickupDate" className="form-label">Date</label>
+              <select className="form-select custom-select" id="pickupDate">
+                <option value="" disabled selected hidden>Select your date</option>
+                <option>Today</option>
+                <option>Tomorrow</option>
+                <option>17.03.24</option>
+              </select>
+            </div>
+            <div className="mt-3 col-md-6">
+              <label htmlFor="pickupTime" className="form-label">Time</label>
+              <select className="form-select custom-select" id="pickupTime">
+                <option value="" disabled selected hidden>Select your time</option>
+                <option>15:00</option>
+                <option>18:00</option>
+                <option>21:00</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div className="form-check mb-3">
+            <img src='/public/images/drop-off-icon.png' style={{height: '16px', width: '16px'}}/>
+            <label className="form-check-label ml-2" htmlFor="dropOff">
+              Drop-Off
+            </label>
+          </div>
+
+          <div className="row g-3">
+            <div className="col-md-6">
+              <label htmlFor="dropOffLocation" className="form-label">Locations</label>
+              <select className="form-select custom-select" id="dropOffLocation">
+                <option value="" disabled selected hidden>Select your city</option>
+                <option>New York</option>
+                <option>Moscow</option>
+                <option>Washington</option>
+              </select>
+            </div>
+            <div className="col-md-6">
+              <label htmlFor="dropOffDate" className="form-label">Date</label>
+              <select className="form-select custom-select" id="dropOffDate">
+                <option value="" disabled selected hidden>Select your date</option>
+                <option>Today</option>
+                <option>Tomorrow</option>
+                <option>17.03.24</option>
+              </select>
+            </div>
+            <div className="mt-3 col-md-6">
+              <label htmlFor="dropOffTime" className="form-label">Time</label>
+              <select className="form-select custom-select" id="dropOffTime">
+                <option value="" disabled selected hidden>Select your time</option>
+                <option>16:00</option>
+                <option>19:00</option>
+                <option>22:00</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default RentalInfo;
+
+
+const RentalSum = ({car}) => {
+  return (
+      <div className="row p-4">
+          <div className="col-12 bg-white rounded shadow-sm p-4 form-container" style={{ maxHeight: '500px', width: '600px'}}>
+              <div className="Rental-h">
+                  <h5>Rental Summary</h5>
+                  <p className="text" style={{color: '#90A3BF'}}>Prices may change depending on the length of the rental and the price of your rental car.</p>
+              </div>
+              <div className="row rent-name-img">
+                  <div className="rental-img-container mr-4">
+                      <img src={car.image} alt=""/>
+                  </div>
+                  <div className="rental-name ml-4">
+                        <h1 className="pb-3">{car.name}</h1>
+                        <div className="rating d-flex align-items-center gap-3 mb-5">
+                            <i className="fas fa-star text-warning"></i>
+                            <i className="fas fa-star text-warning"></i>
+                            <i className="fas fa-star text-warning"></i>
+                            <i className="fas fa-star text-warning"></i>
+                            <i className="fas fa-star-half-alt text-warning"></i>
+                            <span className="text-muted">440+ Reviewer</span>
+                        </div>
+                    </div>
+              </div>
+              <div className="row mt-4">
+                  <div className="col-6 p-0">
+                      <p className="text" style={{color: '#90A3BF'}}>Subtotal</p>
+                  </div>
+                  <div className="col-6 t-e p-0">
+                      <p>${car.price}</p>
+                  </div>
+                  <div className="col-6 p-0">
+                      <p className="text" style={{color: '#90A3BF'}}>Tax</p>
+                  </div>
+                  <div className="col-6 t-e p-0">
+                      <p>$0.00</p>
+                  </div>
+                  <div className="col-12 row mt-4">
+                      <div>
+                          <h5>Total Rental Price</h5>
+                          <p className="text" style={{color: '#90A3BF'}}>Overall price and includes rental discount</p>
+                      </div>
+                      <div className="ml-auto">
+                          <h1 className="mb-0 mt-1">${car.price}</h1>
+                      </div>
+                  </div>
+
+              </div>
+
+          </div>
+      </div>
+  );
+};
+
+export default RentalSum;
+
+//AHMEDVARD
