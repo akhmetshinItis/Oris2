@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("car-booking")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55ce5a951463134f00fe636f7c8b66c47a7cfba5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b45ae6c55a70cfd23efbe79fd80e894c7c4a0150")]
 [assembly: System.Reflection.AssemblyProductAttribute("car-booking")]
 [assembly: System.Reflection.AssemblyTitleAttribute("car-booking")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
