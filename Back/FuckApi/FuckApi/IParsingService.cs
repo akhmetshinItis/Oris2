@@ -1,6 +1,8 @@
+using FuckApi;
+
 namespace Parser.Services.ParsingService ;
 
     public interface IParsingService
     {
-        Task<string> Parse();
+        Task<List<Card>> Parse(int pageNumber, int pageSize);
     }

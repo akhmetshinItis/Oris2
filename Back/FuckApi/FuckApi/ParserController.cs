@@ -14,9 +14,9 @@ namespace FuckApi ;
         }
 
         [HttpGet("api/v1/parser")]
-        public async Task<IActionResult> Parse()
+        public async Task<IActionResult> Parse(int pageNumber, int pageSize)
         {
-            await _parsingService.Parse();
-            return Ok();
+            var result = await _parsingService.Parse(pageNumber, pageSize);
+            return Ok(result);
         }
     }
