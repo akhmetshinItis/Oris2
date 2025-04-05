@@ -21,26 +21,54 @@ const Home = () => {
 
     const { searchQuery } = useContext(SearchContext);
 
-    const filteredPopularCars = cars.slice(0, 4).filter((car) =>
-        car.name.toLowerCase().includes(searchQuery)
-    );
+    // const filteredPopularCars = cars.slice(0, 4).filter((car) =>
+    //     car.name.toLowerCase().includes(searchQuery)
+    // );
 
-    const filteredRecommendationCars = cars.filter((car) =>
-        car.name.toLowerCase().includes(searchQuery)
-    );
+
+
+    // const filteredRecommendationCars = cars.filter((car) =>
+    //     car.name.toLowerCase().includes(searchQuery)
+    // );
+
+    useEffect(() => {
+        const fetchFilteredCars = async () => {
+          try {
+            // Создаем URL с query-параметрами
+            const url = new URL("http://localhost:5185/api/Cars/GetFiltered");
+    
+            if (searchQuery) {
+              url.searchParams.append("name", searchQuery);
+            }
+    
+            const response = await fetch(url);
+    
+            if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
+    
+            const data = await response.json();
+            setCars(data);
+          } catch (error) {
+            console.error("Error fetching cars:", error);
+          }
+        };
+    
+        fetchFilteredCars();
+      }, [searchQuery]);
 
     return (
         <div className='background-gray'>
             <Ads />
             <Options />
             <CarsSection
-                cars={filteredPopularCars}
+                cars={cars}
                 title="Popular cars"
                 showViewAll={true}
                 onViewAllClick={() => console.log('View all popular cars')}
             />
             <CarsSection
-                cars={filteredRecommendationCars}
+                cars={cars}
                 title="Recommendation cars"
                 showViewAll={false}
             />

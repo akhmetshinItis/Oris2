@@ -3,6 +3,7 @@ import CarCard from './CarCard';
 import { Link } from 'react-router-dom';
 
 const CarsSection = ({ cars, title, showViewAll = false, onViewAllClick }) => {
+    
     return (
         <section className="cars-cards">
             {title && (

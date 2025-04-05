@@ -10,13 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("e456894e-552f-4da6-af6a-e39a75977704")]
-[assembly: System.Reflection.AssemblyCompanyAttribute("car-booking")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("FuckApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+330b7db04dde7ccbb36240af1e9a40f518b70023")]
-[assembly: System.Reflection.AssemblyProductAttribute("car-booking")]
-[assembly: System.Reflection.AssemblyTitleAttribute("car-booking")]
+[assembly: System.Reflection.AssemblyProductAttribute("FuckApi")]
+[assembly: System.Reflection.AssemblyTitleAttribute("FuckApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Создано классом WriteCodeFragment MSBuild.
