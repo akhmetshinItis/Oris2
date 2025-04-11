@@ -14,5 +14,6 @@ namespace car_booking.Persistence ;
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfiguration(new CarsConfiguration());
         }
     }

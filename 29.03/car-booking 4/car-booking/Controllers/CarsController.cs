@@ -2,7 +2,7 @@ using car_booking.DataSeeds;
 using car_booking.Enums;
 using car_booking.Extensions;
 using car_booking.Models;
-using Microsoft.AspNetCore.Http.HttpResults;
+using car_booking.Persistence;
 using Microsoft.AspNetCore.Mvc;
 
 namespace car_booking.Controllers;
@@ -11,19 +11,22 @@ namespace car_booking.Controllers;
 [Route("api/[controller]")]
 public class CarsController : ControllerBase
 {
-    public CarsController()
+    private readonly ApplicationDbContext _context;
+
+    public CarsController(ApplicationDbContext context)
     {
+        _context = context;
     }
 
     [HttpGet("GetById/{id:int}")]
     public ActionResult<CarVm?> GetCarById([FromRoute] int id)
         => Ok(new CarVm(
-            Seed.Cars.FirstOrDefault(x => x.Id == id)
+            _context.Cars.FirstOrDefault(x => x.Id == id)
             ?? throw new Exception($"Car with id {id} not found.")));
 
     [HttpGet("GetAll")]
     public ActionResult<IEnumerable<CarVm>> GetAll()
-        => Ok(Seed.Cars.Select(x => new CarVm(x)));
+        => Ok(_context.Cars.Select(x => new CarVm(x)));
         
     [HttpGet("GetFiltered")]
     public IEnumerable<CarVm>? GetFiltered(
@@ -33,8 +36,8 @@ public class CarsController : ControllerBase
         int? spaces,
         TransmissionType? transmissionType,
         CarType? carType)
-        => Seed.Cars
-            .Where(x => x.Name.ToLower().Contains(name?.ToLower() ?? ""))
+        => _context.Cars
+            .WhereIfNotNull(name, x => x.Name.ToLower().Contains(name!.ToLower() ?? ""))
             .WhereIfNotNull(price, p => p.Price == price)
             .WhereIfNotNull(liters, x => x.Liters == liters)
             .WhereIfNotNull(spaces, x => x.Spaces == spaces)
