@@ -1,0 +1,15 @@
+/Users/tagirahmetsin/2nd course/ORIIS 2nd/Repository/Test/Oris2/Back/Contur/Contur/bin/Debug/net6.0/Contur
+/Users/tagirahmetsin/2nd course/ORIIS 2nd/Repository/Test/Oris2/Back/Contur/Contur/bin/Debug/net6.0/Contur.deps.json
+/Users/tagirahmetsin/2nd course/ORIIS 2nd/Repository/Test/Oris2/Back/Contur/Contur/bin/Debug/net6.0/Contur.runtimeconfig.json
+/Users/tagirahmetsin/2nd course/ORIIS 2nd/Repository/Test/Oris2/Back/Contur/Contur/bin/Debug/net6.0/Contur.dll
+/Users/tagirahmetsin/2nd course/ORIIS 2nd/Repository/Test/Oris2/Back/Contur/Contur/bin/Debug/net6.0/Contur.pdb
+/Users/tagirahmetsin/2nd course/ORIIS 2nd/Repository/Test/Oris2/Back/Contur/Contur/obj/Debug/net6.0/Contur.csproj.AssemblyReference.cache
+/Users/tagirahmetsin/2nd course/ORIIS 2nd/Repository/Test/Oris2/Back/Contur/Contur/obj/Debug/net6.0/Contur.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tagirahmetsin/2nd course/ORIIS 2nd/Repository/Test/Oris2/Back/Contur/Contur/obj/Debug/net6.0/Contur.AssemblyInfoInputs.cache
+/Users/tagirahmetsin/2nd course/ORIIS 2nd/Repository/Test/Oris2/Back/Contur/Contur/obj/Debug/net6.0/Contur.AssemblyInfo.cs
+/Users/tagirahmetsin/2nd course/ORIIS 2nd/Repository/Test/Oris2/Back/Contur/Contur/obj/Debug/net6.0/Contur.csproj.CoreCompileInputs.cache
+/Users/tagirahmetsin/2nd course/ORIIS 2nd/Repository/Test/Oris2/Back/Contur/Contur/obj/Debug/net6.0/Contur.dll
+/Users/tagirahmetsin/2nd course/ORIIS 2nd/Repository/Test/Oris2/Back/Contur/Contur/obj/Debug/net6.0/refint/Contur.dll
+/Users/tagirahmetsin/2nd course/ORIIS 2nd/Repository/Test/Oris2/Back/Contur/Contur/obj/Debug/net6.0/Contur.pdb
+/Users/tagirahmetsin/2nd course/ORIIS 2nd/Repository/Test/Oris2/Back/Contur/Contur/obj/Debug/net6.0/Contur.genruntimeconfig.cache
+/Users/tagirahmetsin/2nd course/ORIIS 2nd/Repository/Test/Oris2/Back/Contur/Contur/obj/Debug/net6.0/ref/Contur.dll

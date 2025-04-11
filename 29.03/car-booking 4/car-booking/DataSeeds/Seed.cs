@@ -1,3 +1,4 @@
+using car_booking.Entities;
 using car_booking.Enums;
 using car_booking.Models;
 
